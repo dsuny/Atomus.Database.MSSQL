@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Atomus</RootNamespace>
+    <AssemblyName>Atomus.Database.MSSQL</AssemblyName>
+    <Authors>DSUN</Authors>
+    <Company>Atomus</Company>
+    <Description>Atomus Framework in .Net Standard 2.0</Description>
+    <Product>Atomus Framework in .Net Standard 2.0</Product>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Database.MSSQL</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Database.MSSQL</RepositoryUrl>
+    <PackageIcon>atomus.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Atomus Atomus.Core Database MSSQL AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 1.0.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\MSSQL.cs" Link="MSSQL.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetStandard" Version="1.0.2.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>
